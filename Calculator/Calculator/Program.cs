@@ -9,7 +9,7 @@ namespace Calculator
             Console.Write("Enter first number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("OPerator: ");
+            Console.Write("Operator: ");
             string op = Console.ReadLine();
 
             Console.Write("Enter second number: ");
@@ -30,6 +30,10 @@ namespace Calculator
             else if (op == "*")
             {
                 Console.WriteLine(num1 * num2);
+            }
+            else 
+            {
+                Console.WriteLine("Invalid operator");
             }
             Console.ReadLine();
         }
